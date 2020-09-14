@@ -1,0 +1,70 @@
+<p>VIRTUAL SCROLLING</p>
+
+<h1 class="center">Virtual Scroll using Angular 7</h1>
+
+<ul class="list">
+  <cdk-virtual-scroll-viewport  style="height: 500px" itemSize="1" >
+    <ng-container *cdkVirtualFor="let n of numbers">
+      <li> {{n}} </li>
+    </ng-container>
+  </cdk-virtual-scroll-viewport>
+</ul> 
+
+
+<button (click)="ram()">Click Me</button><br><br><br>
+
+  <h1> Sample Form</h1>
+<body>
+  
+<label for="abc">First name:<span id="star" style="color: red;">*</span></label>
+<input type="text" id="abc" name="fname" value="">
+
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" value=""><br><br>
+<label for="email" >Email  :</label>
+<input type="email" value="" name="EMAIL" id="email" placeholder="your@email.com" autofocus required pattern="[^ @]*@[^ @]*" />
+<br><br>
+<label for="password"  >Password:</label>
+<input type="password" id="password" name="password" value="">
+<label for="password"  > Confirm Password:</label>
+<input type="password" id="password" name="password" value=""><br><br>
+<label for="tel" >Mobile No:</label>
+<input type="tel" id="tel" name="tel" value="" maxlength="10"><br><br>
+<label for="gender" >Gender:</label><br>
+<label for="male" >Male</label>
+<input type="radio" id="male" name="gender" value="">
+<label for="female" >Female</label>
+<input type="radio" id="female" name="gender" value=""><br><br>
+<label for="location">location</label>
+<select>
+    <option value="telangane">Telangana</option>
+    <option value="karnataka">Karnataka</option>
+</select><br><br>
+<label for="amount">Payment</label>
+<input list="money" name="money" id="amount">
+<datalist id="money">
+    <option value="Cash">
+    <option value="Card">
+</datalist><br><br>
+<fieldset style="width: 400px;">
+  <legend>address</legend>
+  <div>Nationality:<input type="text" value="Indian" readonly></div><br>
+  <div>Medium: <input type="text" value="english" disabled></div><br>
+  <label for="code">zip code</label>
+  <input type="text" id="code" name="code" value="123456">
+</fieldset><br>
+
+<label for="bday"> Date Of Birth:</label>
+<input type="date" id="bday" name="bday" value=""><br><br>
+
+
+<label for="upload">Upload</label>
+<input type="file" id="upload" name="upload"><br><br>
+
+
+<input type="checkbox" id="rights">
+<label for="rights">accept terms&conditions:</label>
+
+<input type="reset" id="reset" value="Reset">
+<input type="submit" value="submit">
+</body>
